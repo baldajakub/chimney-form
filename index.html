@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="parent">  
+    <!-- DIVs for left side -->
+    <form id="regForm" action="insert.php" method="post">
+      <div class="div5">
+        <h1>Formulář pro nabídku fasadního komínu.</h1>
+        <h2>Zvolte variantu, která Vám vyhovuje.</h2>
+        <p>
+            A = Komín rovný s průchodem střešní krytinou.
+        </p>
+        <p>
+            B = Komín rovný s delšími držáky pro vyhnutí se konstrukci střechy.
+        </p>
+        <p>
+            C = Komín uhnutý pro vyhnutí se konstrukci střechy.
+        </p>
+        <p>
+            (u této varinty je normou povoleno použít kolena max.30°).
+        </p>
+      </div>
+            <!--            <p>&nbsp;</p>        ( empty <p> )   -->
+        <br>
+
+        <div class="tab">Základní údaje:
+            <p><input placeholder="Jméno" name="name" oninput="this.className = ''"></p>
+            <p><input placeholder="Příjmení" name="surname" oninput="this.className = ''"></p>
+            <p><input placeholder="Telefonní číslo" name="phone" oninput="this.className = ''"></p>
+            <p><input placeholder="Emailová adresa" name="email" oninput="this.className = ''"></p>
+            <p><input placeholder="Adresa dodání" name="adress" oninput="this.className = ''"></p>
+            <p><input placeholder="Varianta komínu" name="type" oninput="this.className = ''"></p>
+        </div>
+
+        <div class="tab">Formulář 1/2:
+            <p><input placeholder="Hodnota A (v mm)" name="valuea" oninput="this.className = ''"></p>
+            <p><input placeholder="Hodnota B (v mm)" name="valueb" oninput="this.className = ''"></p>
+            <p><input placeholder="Hodnota C (v mm)" name="valuec" oninput="this.className = ''"></p>
+            <p><input placeholder="Hodnota D1 (v mm)" name="valued1" oninput="this.className = ''"></p>
+            <p><input placeholder="Hodnota D2 (v mm)" name="valued2" oninput="this.className = ''"></p>
+            <p><input placeholder="Hodnota E (v mm)" name="valuee" oninput="this.className = ''"></p>
+        </div>
+
+        <div class="tab">Formulář 2/2:
+            <p><input placeholder="Hodnota F (v mm)" name="valuef" oninput="this.className = ''"></p>
+            <p><input placeholder="Hodnota G (v mm)" name="valueg" oninput="this.className = ''"></p>
+            <p><input placeholder="Hodnota H (v mm)" name="valueh" oninput="this.className = ''"></p>
+            <p><input placeholder="Hodnota I (v mm)" name="valuei" oninput="this.className = ''"></p>
+            <p><input placeholder="Hodnota J (v mm)" name="valuej" oninput="this.className = ''"></p>
+        </div>
+
+        <div class="tab">Poznámka:
+            <p><input placeholder="Poznámka..." name="note" oninput="this.className = ''"></p>
+        </div>
+
+        <div style="overflow:auto;">
+            <div style="float:right;">
+                <button type="button" class="button-3" role="button" id="prevBtn" onclick="nextPrev(-1)">Zpět</button>
+                <button type="button" class="button-3" role="button" id="nextBtn" onclick="nextPrev(1)">Další</button>
+            </div>
+        </div>
+    <!-- Circles which indicates the steps of the form -->
+     <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+        </div>
+    </form>
+
+        <!-- div grid rightside -->
+    <div class="rightside">
+
+        <div class="tab2">
+            <img src="https://www.poctivy-komin.cz/user/documents/upload/fasada1-1.png" width="500" height="600" class="center">
+        </div>
+
+        <div class="tab2">
+            <img src="https://www.poctivy-komin.cz/user/documents/upload/fasada2-1.png" width="500" height="600" class="center">
+        </div>
+
+        <div class="tab2">
+            <img src="https://www.poctivy-komin.cz/user/documents/upload/fasada2-2.png" width="500" height="600" class="center">
+        </div>
+
+        <div class="tab2">
+            <img src="https://www.poctivy-komin.cz/user/documents/upload/fasada2-2.png" width="500" height="600" class="center">
+        </div>
+
+    </div>
+    <script src="jscript.js"></script>
+  </div> 
+</body>
+
+</html>
